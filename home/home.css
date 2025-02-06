@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", serif;
+    background-color: #000; /* Black background */
+    color: white;
+    margin: 10px;
+    overflow: auto;
+}
+
+nav {
+    background-color: #000; /* Same black as body */
+    padding: 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9800; /* Orange for visibility */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0px 20px;
+     /* Increased spacing between navbar options */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff9800; /* Orange on hover */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+.left-side {
+    width: 50%;
+    padding-right: 20px;
+}
+.left-side h1 {
+    font-size: 70px; /* You can increase or decrease this value */
+    font-weight: 100; /* Make it bold */
+    margin-bottom: 20px; /* Optional: Add some space below */
+}
+
+.right-side img {
+    width: 100%;
+    max-width: 500vh; /* Increased width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px; /* Added border radius */
+}
+
+.bottom-options {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 20px;
+    margin: -10px 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px; /* Slightly rounded */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e53d32;
+}
+
+.bottom-options {
+    display: flex;
+    justify-content: space-evenly;  /* Distribute buttons evenly */
+    align-items: center;
+    margin: 20px 0;  /* Reduced margin to move the buttons upwards */
+    background-color: #000;  /* Ensure the background is black */
+}
+
+.animal {
+    width: 600px;
+    height: 240px;  /* Increased height to accommodate both logos */
+    margin-top: 30px;  /* Reduced margin-top to move buttons up */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Distribute space between text and logos */
+    align-items: center; /* Center the content */
+    padding: 20px;
+    transition: border 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.animal:hover{
+
+    border: 5px solid red;
+    padding: 30px;    
+}
+
+#dog {
+    background-color: rgb(145, 104, 241);
+}
+
+#cat {
+    background-color: rgb(177, 233, 86);
+}
+
+#bird {
+    background-color: rgb(241, 54, 101);
+}
+
+.text-content {
+    text-align: center;  /* Center the text */
+    padding-bottom: 10px; /* Add some space between the text and the logo */
+}
+
+.animal_logo {
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+}
+
+.logo-bottom {
+    width: 40px;  /* Adjust the size of the second logo */
+    height: 30px;
+    margin-top: 10px; /* Space between the first logo and the second logo */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .left-side h1 {
+        font-size: 50px; /* Decrease heading size on smaller screens */
+    }
+
+    .right-side img {
+        width: 80%; /* Reduce image size */
+    }
+
+    .bottom-options {
+        flex-direction: column;  /* Stack buttons vertically on smaller screens */
+        margin: 20px 0;
+    }
+
+    .animal {
+        width: 90%;  /* Make the animal cards take up 90% of the screen width */
+        margin-top: 10px;  /* Adjust margin for better spacing */
+    }
+
+    .animal_logo {
+        width: 60px;  /* Adjust logo size for smaller screens */
+        height: 60px;
+    }
+
+    .logo-bottom {
+        width: 35px; /* Smaller bottom logo */
+        height: 25px;
+    }
+
+    button {
+        padding: 8px 15px; /* Adjust button padding for smaller screens */
+        font-size: 12px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .left-side h1 {
+        font-size: 40px; /* Decrease heading size even further */
+    }
+
+    .right-side img {
+        width: 100%; /* Full width image on very small screens */
+    }
+
+    .bottom-options {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .animal {
+        width: 100%;  /* Full width animal cards */
+        margin-top: 10px;
+    }
+
+    .animal_logo {
+        width: 50px; /* Even smaller logos */
+        height: 50px;
+    }
+
+    .logo-bottom {
+        width: 30px;
+        height: 20px;
+    }
+
+    button {
+        font-size: 10px;  /* Even smaller button text */
+        padding: 6px 15px;  /* Adjust padding for small screens */
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

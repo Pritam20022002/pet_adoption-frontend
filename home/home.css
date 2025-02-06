@@ -203,11 +203,10 @@ button:hover {
 
     .right-side img {
         width: 100%; /* Full width image on very small screens */
-        margin-top: 80px;
     }
 
     .bottom-options {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
